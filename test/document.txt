@@ -1,0 +1,35 @@
+Phim mới cập nhật /index.php?page=2
+    clean url
+    /
+    /?page=2
+
+Phim theo danh mục /danh-sach.php?type=phim-le (tv-shows, phim-le, phim-bo, dang-chieu)
+    clean url
+    /danh-sach/phim-le
+    /danh-sach/phim-le?page=2
+
+Phim theo thể loại /the-loai.php?genre=hanh-dong
+    clean url
+    /the-loai/hanh-dong
+    /the-loai/hanh-dong?page=2
+
+Phim theo quốc gia /quoc-gia.php?country=nhat-ban
+    clean url
+    /quoc-gia/nhat-ban
+    /quoc-gia/nhat-ban?page=2
+
+Phim theo năm /nam-phat-hanh.php?year=2018
+    clean url
+    /nam-phat-hanh/2018
+    /nam-phat-hanh/2018?page=2
+
+Tìm kiếm phim /tim-kiem.php?keyword=masamune
+    clean url
+    /tim-kiem?keyword=masamune
+    /tim-kiem?keyword=masamune&page=2
+
+Thông tin phim & danh sách tập /phim.php?name=masamune-kun-no-revenge
+    clean url
+    /phim/masamune-kun-no-revenge
+
+

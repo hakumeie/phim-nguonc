@@ -1,0 +1,230 @@
+:root {
+    --text-main: #ffffff;
+    --a-hover: #e0e0e0;
+}
+
+@font-face {font-family: 'SVN-Androgyne';src: url('../fonts/SVN-Androgyne.ttf') format('truetype');}
+@font-face {font-family: 'SVN-Bear'; src: url('../fonts/SVN-Bear.ttf') format('truetype');}
+@font-face {font-family: 'SVN-Revolution'; src: url('../fonts/SVN-Revolution.ttf') format('truetype');}
+@font-face {font-family: 'SVN-Vanessas Valentine'; src: url('../fonts/SVN-Vanessas Valentine.ttf') format('truetype');}
+
+html {scroll-behavior: smooth;}
+
+body {
+    background-color: #080808;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    width: 100%;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+}
+
+
+a {text-decoration: none;color: var(--text-main);transition: color 0.2s ease;}
+a:hover {text-decoration: none;color: var(--a-hover);}
+a:visited {color: var(--text-main);}
+.logo a {font-family: 'SVN-Revolution';color: deepskyblue;}
+.drawer a, .drawer p, .drawer button, .drawer strong {font-family: 'SVN-Androgyne';}
+footer p {font-family: 'SVN-Vanessas Valentine';}
+
+header {
+    background: #1b1b1b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    box-sizing: border-box;
+    padding: 1rem 2rem 1rem;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 100%; height: 2px;
+    background: linear-gradient(to right, dodgerblue, deepskyblue);
+}
+
+.header-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+    right: 0px;
+}
+
+.search input {
+    border: none;
+    outline: none;
+    background-color: rgba(37, 37, 37, 0.3);
+    color: #dbdbdb;
+    padding: 5px 10px 5px;
+    border-radius: 2px;
+}
+
+.search input:focus {
+    border-bottom: 1px solid rgb(11, 133, 255);
+}
+
+.search button {
+    width: 2rem; height: 2rem;
+    padding: 0.5rem;
+    background: transparent;
+    border: none; outline: none;
+    color: white;
+    cursor: pointer;
+    background: transparent;
+}
+
+@media (max-width: 440px) {
+    #search-input {
+        display: none; 
+        position: absolute;
+        top: 100%;
+        right: 10px;
+        width: 250px;
+        background: #1b1b1b;
+        padding: 10px;
+        z-index: 1000;
+        border: 2px solid rgb(11, 133, 255);
+        border-radius: 5px;
+    }
+    header {padding: 1rem 1rem 1rem 2rem;}
+}
+
+.drawer {
+    position: fixed;
+    top: 0; right: 0;
+    height: 100%; width: 250px;
+    max-width: 80vw;
+    background: rgb(13, 67, 121);
+    box-shadow: -4px 0 12px rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+    box-sizing: border-box;
+    overflow-y: auto;
+    transform: translateX(100%);
+    transition: transform 0.2s ease;
+}
+
+.drawer.open {
+    transform: translateX(0);
+}
+
+.drawer-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid #2a2a2a;
+    color: var(--text-main);
+}
+
+.drawer-header button {
+    background: transparent;
+    border: none;
+    color: var(--text-main);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.drawer-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0.5rem 0;
+}
+
+.drawer-nav li a,
+.drawer-nav .accordion {
+    display: block;
+    width: 100%;
+    padding: 0.8rem 1rem;
+    background: transparent;
+    border: none;
+    text-align: left;
+    color: var(--text-main);
+    font-size: 1rem;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.drawer-nav .accordion::after {
+    content: "+";
+    float: right;
+}
+
+.drawer-nav .accordion.active::after {
+    content: "−";
+}
+
+.panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease;
+    background: rgb(9, 51, 92);
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+}
+
+.overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.hamburger {
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+}
+
+/* ======================================================================== */
+/* ======================================================================== */
+
+footer {
+    background-color: rgb(6, 47, 89);
+    color: #b6b6b6;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    box-sizing: border-box;
+}
+
+footer::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 2px;
+    background: linear-gradient(to right, rgba(79, 167, 255, 0.5),rgba(0, 191, 255, 0.5));
+}
+
+.footer-container {
+    position: relative;
+    margin: 1rem 2rem;
+    width: 100%;
+    font-family: 'SVN-Vanessas Valentine';
+}
+

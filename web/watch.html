@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Xem phim - Kai3z</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <button class="hamburger" id="open-drawer" aria-label="Open menu">☰</button>
+    <div class="brand"><a href="/">Kai3z</a></div>
+    <div class="search">
+      <input id="search-input" placeholder="Tìm phim, diễn viên..." />
+      <button id="search-btn">Tìm</button>
+    </div>
+  </header>
+
+  <aside class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawer-header">
+      <strong>Menu</strong>
+      <button id="close-drawer">✕</button>
+    </div>
+    <nav class="drawer-nav">
+      <ul>
+        <li><a href="category.html?category=phim-le">TV shows</a></li>
+        <li><a href="category.html?category=phim-le">Phim lẻ</a></li>
+        <li><a href="category.html?category=phim-bo">Phim bộ</a></li>
+        <li><a href="category.html?category=phim-dang-chieu">Đang chiếu</a></li>
+        <li class="accordion-group">
+          <button class="accordion" data-target="genres">Thể loại</button>
+          <div class="panel" id="genres"></div>
+        </li>
+        <li class="accordion-group">
+          <button class="accordion" data-target="countries">Quốc gia</button>
+          <div class="panel" id="countries"></div>
+        </li>
+        <li class="accordion-group">
+          <button class="accordion" data-target="years">Năm</button>
+          <div class="panel" id="years"></div>
+        </li>
+        <li><a href="#">Faqs</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-card">
+        <div class="hero-meta" style="position:static;padding:24px;filter:none;">
+          <h1 id="watch-title">Đang tải phim...</h1>
+          <p id="watch-sub" style="margin:10px 0;color:var(--muted)"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="episodes" id="watch-episodes" style="display:none;">
+      <h3>Danh sách tập</h3>
+      <p class="episode-meta" id="watch-episode-text"></p>
+      <div class="episodes-list" id="watch-episodes-list"></div>
+    </section>
+
+    <div class="watch-player" style="margin-top:20px;border-radius:12px;overflow:hidden;background:#000;min-height:360px;position:relative;">
+      <iframe id="watch-player" src="about:blank" frameborder="0" allowfullscreen style="width:100%;height:480px;background:#000"></iframe>
+      <div class="watch-player-actions">
+        <button id="watch-prev-btn" type="button" class="watch-nav-btn">
+          <span class="watch-nav-icon">◀</span>
+          Tập trước
+        </button>
+        <button id="watch-next-btn" type="button" class="watch-nav-btn">
+          Tập sau
+          <span class="watch-nav-icon">▶</span>
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <template id="card-template">
+    <article class="card">
+      <img class="thumb" src="" alt="">
+      <div class="card-body">
+        <h3 class="card-title"></h3>
+        <p class="card-meta"></p>
+        <p class="card-desc"></p>
+        <div class="card-footer">
+          <button class="watch-now">Xem phim</button>
+        </div>
+      </div>
+    </article>
+  </template>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

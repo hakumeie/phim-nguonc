@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chi tiết phim - Kai3z</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <button class="hamburger" id="open-drawer" aria-label="Open menu">☰</button>
+    <div class="brand"><a href="/">Kai3z</a></div>
+    <div class="search">
+      <input id="search-input" placeholder="Tìm phim, diễn viên..." />
+      <button id="search-btn">Tìm</button>
+    </div>
+  </header>
+
+  <aside class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawer-header">
+      <strong>Menu</strong>
+      <button id="close-drawer">✕</button>
+    </div>
+    <nav class="drawer-nav">
+      <ul>
+        <li><a href="category.html?category=tv-shows">TV shows</a></li>
+        <li><a href="category.html?category=phim-le">Phim lẻ</a></li>
+        <li><a href="category.html?category=phim-bo">Phim bộ</a></li>
+        <li><a href="category.html?category=phim-dang-chieu">Đang chiếu</a></li>
+        <li class="accordion-group">
+          <button class="accordion" data-target="genres">Thể loại</button>
+          <div class="panel" id="genres"></div>
+        </li>
+        <li class="accordion-group">
+          <button class="accordion" data-target="countries">Quốc gia</button>
+          <div class="panel" id="countries"></div>
+        </li>
+        <li class="accordion-group">
+          <button class="accordion" data-target="years">Năm</button>
+          <div class="panel" id="years"></div>
+        </li>
+        <li><a href="#">Faqs</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main class="container">
+    <section id="film-detail">
+      <div class="hero-card" id="film-hero">
+        <img id="film-poster" src="https://via.placeholder.com/1200x400?text=Poster" alt="poster">
+        <div class="hero-meta">
+          <h1 id="film-title">—</h1>
+          <p id="film-sub">—</p>
+        </div>
+      </div>
+
+      <div class="content" style="margin-top:16px;display:flex;gap:16px;flex-wrap:wrap">
+        <div style="flex:1 1 300px;max-width:360px">
+          <img id="film-thumb" src="https://via.placeholder.com/400x600?text=Thumb" style="width:100%;border-radius:6px" alt="thumb">
+        </div>
+        <div style="flex:2 1 480px;color:#dfeeff">
+          <h2 id="film-original">Tên gốc</h2>
+          <button class="watch-button" id="watch-button">Xem phim</button>
+          <p id="film-desc">Mô tả</p>
+          <ul id="film-meta-list" style="color:var(--muted)"></ul>
+          <div id="film-categories" style="margin-top:16px;color:#e6eef6"></div>
+        </div>
+      </div>
+      <section class="episodes" id="episodes-section" style="display:none;">
+        <h3>Danh sách tập</h3>
+        <p class="episode-meta" id="next-episode-text"></p>
+        <div class="episodes-list" id="episodes-list"></div>
+      </section>
+    </section>
+  </main>
+
+  <template id="card-template">
+    <article class="card">
+      <img class="thumb" src="" alt="">
+      <div class="card-body">
+        <h3 class="card-title"></h3>
+        <p class="card-meta"></p>
+        <p class="card-desc"></p>
+      </div>
+    </article>
+  </template>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

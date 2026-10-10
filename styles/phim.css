@@ -1,0 +1,235 @@
+/* ============================================================
+   ============================================================ */
+#player-wrapper {
+    margin-bottom: 16px;
+}
+
+#player-title {
+    font-size: 25px;
+    color: #ccc;
+    font-family: 'SVN-Bear';
+    padding: 10px 0 8px;
+    text-align: center;
+}
+
+#player-container {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #000;
+}
+
+#player-iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* ============================================================
+   ============================================================ */
+#player-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    background: #1b1b1b;
+    padding: 8px 0;
+    flex-wrap: wrap;
+}
+
+#player-controls button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    background: transparent;
+    border: none;
+    color: #ccc;
+    font-size: 12px;
+    cursor: pointer;
+    padding: 6px 16px;
+    transition: background 0.15s, color 0.15s;
+    min-width: 64px;
+}
+
+#player-controls button i {
+    font-size: 18px;
+}
+
+#player-controls button:hover:not(:disabled) {
+    background: rgba(255,255,255,0.08);
+    color: #fff;
+}
+
+#player-controls button:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+#player-controls button.active {
+    color: rgb(11, 133, 255);
+}
+
+/* ============================================================
+   ============================================================ */
+#episodes-wrapper {
+    background: #1b1b1b;
+    padding: 12px;
+    margin-bottom: 16px;
+}
+
+#server-tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.server-tab {
+    background: #2a2a2a;
+    border: none;
+    color: #ccc;
+    padding: 6px 14px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: background 0.15s, color 0.15s;
+}
+
+.server-tab.active,
+.server-tab:hover {
+    background: rgb(11, 133, 255);
+    color: #fff;
+}
+
+#episode-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.ep-btn {
+    background: #2a2a2a;
+    border: none;
+    color: #ccc;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: background 0.15s, color 0.15s;
+}
+
+.ep-btn:hover {
+    background: rgba(11, 133, 255, 0.3);
+    color: #fff;
+}
+
+.ep-btn.active {
+    background: rgb(11, 133, 255);
+    color: #fff;
+}
+
+/* ============================================================
+   ============================================================ */
+#film-info {
+    display: flex;
+    gap: 20px;
+    background: #1b1b1b;
+    padding: 16px;
+}
+
+#film-poster {
+    align-self: flex-start;
+    width: 160px;
+    min-width: 160px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+#film-meta {
+    flex: 1;
+    min-width: 0;
+}
+
+#film-name {
+    font-size: 20px;
+    margin: 0 0 4px;
+    color: #fff;
+}
+
+#film-original-name {
+    font-size: 13px;
+    color: #888;
+    margin: 0 0 12px;
+}
+
+#film-details {
+    border-collapse: collapse;
+    margin-bottom: 12px;
+    width: 100%;
+}
+
+#film-details td {
+    padding: 3px 8px 3px 0;
+    font-size: 13px;
+    color: #ccc;
+    vertical-align: top;
+}
+
+.detail-label {
+    color: #888;
+    white-space: nowrap;
+    min-width: 100px;
+}
+
+#film-desc {
+    font-size: 13px;
+    color: #aaa;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ============================================================
+   ============================================================ */
+#overlay-dark {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 50;
+}
+
+#overlay-dark.active {
+    display: block;
+}
+
+#player-wrapper {
+    position: relative;
+    z-index: 51; 
+}
+
+/* ============================================================
+   ============================================================ */
+@media (max-width: 600px) {
+    #film-info {
+        flex-direction: column;
+    }
+
+    #film-poster {
+        width: 120px;
+        min-width: 120px;
+        height: auto;
+        object-fit: contain;
+        align-self: flex-start;
+    }
+    #player-controls button {
+        padding: 6px 10px;
+        min-width: 52px;
+        font-size: 11px;
+    }
+
+    #player-controls button i {
+        font-size: 15px;
+    }
+}

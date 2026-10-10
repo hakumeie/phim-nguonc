@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kai3z - Movies</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <button class="hamburger" id="open-drawer" aria-label="Open menu">☰</button>
+    <div class="brand"><a href="/">Kai3z</a></div>
+    <div class="search">
+      <input id="search-input" placeholder="Tìm phim, diễn viên..." />
+      <button id="search-btn">Tìm</button>
+    </div>
+  </header>
+
+  <aside class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawer-header">
+      <strong>Menu</strong>
+      <button id="close-drawer">✕</button>
+    </div>
+    <nav class="drawer-nav">
+      <ul>
+        <li><a href="category.html?category=tv-shows">TV shows</a></li>
+        <li><a href="category.html?category=phim-le">Phim lẻ</a></li>
+        <li><a href="category.html?category=phim-bo">Phim bộ</a></li>
+        <li><a href="category.html?category=phim-dang-chieu">Đang chiếu</a></li>
+        <li class="accordion-group">
+          <button class="accordion" data-target="genres">Thể loại</button>
+          <div class="panel" id="genres"></div>
+        </li>
+        <li class="accordion-group">
+          <button class="accordion" data-target="countries">Quốc gia</button>
+          <div class="panel" id="countries"></div>
+        </li>
+        <li class="accordion-group">
+          <button class="accordion" data-target="years">Năm</button>
+          <div class="panel" id="years"></div>
+        </li>
+        <li><a href="#">Faqs</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main class="container">
+    <section class="lists" id="lists">
+      <h2>Phim mới cập nhật</h2>
+      <div class="grid" id="new-films"></div>
+      <div class="pagination" id="pagination"></div>
+    </section>
+  </main>
+
+  <template id="card-template">
+    <article class="card">
+      <img class="thumb" src="" alt="">
+      <div class="card-body"><a href="">
+        <h3 class="card-title"></h3>
+        <p class="card-meta"></p>
+        <p class="card-desc"></p>
+        </a>
+      </div>
+    </article>
+  </template>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

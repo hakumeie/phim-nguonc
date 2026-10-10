@@ -1,0 +1,311 @@
+https://phim.nguonc.com/api/films/phim-moi-cap-nhat?page=1
+{
+	"status": "success",
+	"paginate": {
+		"current_page": 1,
+		"total_page": 3288,
+		"total_items": 32878,
+		"items_per_page": 10
+	},
+	"items": [
+		{
+			"name": "Hồ Sơ Nam Bộ",
+			"slug": "ho-so-nam-bo",
+			"original_name": "Archives: The Nanyang Mystery",
+			"thumb_url": "https://phim.nguonc.com/public/images/Post/2/ho-so-nam-bo.jpg",
+			"poster_url": "https://phim.nguonc.com/public/images/Post/2/ho-so-nam-bo-1.jpg",
+			"created": "2026-06-11T10:13:07.000000Z",
+			"modified": "2026-06-17T10:10:20.000000Z",
+			"description": "Thời kỳ đầu Dân Quốc, trên vùng biển Nam Dương xảy ra vụ án mạng kỳ bí \"Thủy quỷ vọng hương\". Hai nhân viên thuộc Cục Lưu trữ Phía Nam - đơn vị chuyên điều tra các sự kiện huyền bí của gia tộc họ Trương là Trương Hải Diêm và Trương Hải Hà được cử đến hiện trường. Không ngờ họ vướng vào một âm mưu tử thần nhằm săn lùng các thành viên họ Trương ở hải ngoại. Trương Hải Hà hy sinh thân mình để mở đường cho Hải Diêm lên chuyến tàu Nam An trở về Hạ Môn, hy vọng đồng đội có cơ hội sống sót. Nhưng chuyến hải trình đầy sóng gió này mới chỉ là khởi đầu: một tên quân phiệt quyền lực, chàng kế toán trẻ ngây thơ nhưng kiên định, cùng người thân thập niên chưa gặp... Hải Diêm đơn độc đối mặt với những biến cố dồn dập. Và khi chân anh chạm đất Hạ Môn, số phận thực sự của hai chàng trai mới bắt đầu thay đổi...",
+			"total_episodes": 33,
+			"current_episode": "Tập 18",
+			"time": "46 phút/tập",
+			"quality": "HD",
+			"language": "Vietsub + Thuyết Minh",
+			"director": "Zhou jingtao",
+			"casts": "Trương Tân Thành, Đinh Vũ Hề, Khương Bội Dao"
+		}
+		...
+	]
+}
+
+https://phim.nguonc.com/api/films/danh-sach/phim-hai?page=1
+{
+	"status": "success",
+	"paginate": {
+		"current_page": 1,
+		"total_page": 681,
+		"total_items": 6809,
+		"items_per_page": 10
+	},
+	"cat": {
+		"name": "Hài",
+		"title": "Phim Hài",
+		"slug": "phim-hai"
+	},
+	"items": [
+		{
+			"name": "Cam Kết Thỏa Mãn Tột Cùng",
+			"slug": "cam-ket-thoa-man-tot-cung",
+			"original_name": "Maximum Pleasure Guaranteed",
+			"thumb_url": "https://phim.nguonc.com/public/images/Post/3/cam-ket-thoa-man-tot-cung.jpg",
+			"poster_url": "https://phim.nguonc.com/public/images/Post/3/cam-ket-thoa-man-tot-cung-1.jpg",
+			"created": "2026-05-20T12:11:20.000000Z",
+			"modified": "2026-06-17T06:31:56.000000Z",
+			"description": "Một bà mẹ vừa ly hôn bất ngờ rơi vào vòng xoáy nguy hiểm của tống tiền, án mạng và... bóng đá thiếu nhi.",
+			"total_episodes": 10,
+			"current_episode": "Tập 6",
+			"time": "40 phút/tập",
+			"quality": "HD",
+			"language": "Vietsub",
+			"director": "Alethea Jones",
+			"casts": "Tatiana Maslany, Jake Johnson, Jessy Hodges"
+		}
+		...
+	]
+}
+
+https://phim.nguonc.com/api/film/masamune-kun-no-revenge
+{
+	"status": "success",
+	"movie": {
+		"id": "2d1bcedd27b586d2a9562a0f8e076b41",
+		"name": "Masamune-kun no Revenge",
+		"slug": "masamune-kun-no-revenge",
+		"original_name": "Masamune-kun's Revenge",
+		"thumb_url": "https://phim.nguonc.com/public/images/Film/1727.jpg",
+		"poster_url": "https://phim.nguonc.com/public/images/Film/1727.jpg",
+		"created": "2023-07-18T02:02:52.000000Z",
+		"modified": "2025-07-15T10:04:32.000000Z",
+		"description": "Khi Masamune Makabe còn là một đứa trẻ, anh đã bị một cô gái xinh đẹp, giàu có tên là Aki Adagaki từ chối, người đã đặt cho anh biệt danh là \"Piggy\" vì thừa cân. Chán nản, Masamune đã nỗ lực tập thể dục để cải thiện ngoại hình của mình. Bây giờ là một học sinh trung học đẹp trai nhưng tự ái, Masamune quyết tâm trả thù chính xác anh ta sẽ khiến Aki yêu mình điên cuồng và cuối cùng từ chối cô vào lần tới khi họ gặp nhau.",
+		"total_episodes": 12,
+		"current_episode": "Hoàn tất (12/12)",
+		"time": "23 phút/tập",
+		"quality": "HD",
+		"language": "Vietsub",
+		"director": null,
+		"casts": null,
+		"category": {
+			"1": {
+				"group": {
+					"id": "c4ca4238a0b923820dcc509a6f75849b",
+					"name": "Định dạng"
+				},
+				"list": [
+					{
+						"id": "eccbc87e4b5ce2fe28308fd9f2a7baf3",
+						"name": "Phim bộ"
+					}
+				]
+			},
+			"2": {
+				"group": {
+					"id": "1679091c5a880faf6fb5e6087eb1b2dc",
+					"name": "Thể loại"
+				},
+				"list": [
+					{
+						"id": "45c48cce2e2d7fbdea1afc51c7c6ad26",
+						"name": "Hoạt Hình"
+					},
+					{
+						"id": "d3d9446802a44259755d38e6d163e820",
+						"name": "Phim Hài"
+					},
+					{
+						"id": "98f13708210194c475687be6106a3b84",
+						"name": "Lãng Mạn"
+					},
+					{
+						"id": "2a79ea27c279e471f4d180b08d62b00a",
+						"name": "Tình Cảm"
+					}
+				]
+			},
+			"3": {
+				"group": {
+					"id": "8e296a067a37563370ded05f5a3bf3ec",
+					"name": "Năm"
+				},
+				"list": [
+					{
+						"id": "d645920e395fedad7bbbed0eca3fe2e0",
+						"name": "2017"
+					}
+				]
+			},
+			"4": {
+				"group": {
+					"id": "67c6a1e7ce56d3d6fa748ab6d9af3fd7",
+					"name": "Quốc gia"
+				},
+				"list": [
+					{
+						"id": "d2ddea18f00665ce8623e36bd4e3c7c5",
+						"name": "Nhật Bản"
+					}
+				]
+			}
+		},
+		"episodes": [
+			{
+				"server_name": "Vietsub #1",
+				"items": [
+					{
+						"name": "1",
+						"slug": "tap-1",
+						"embed": "https://embed15.streamc.xyz/embed.php?hash=5da0e4425fb4a8cd0ab078083a167214",
+						"m3u8": "https://sing.phimmoi.net/5da0e4425fb4a8cd0ab078083a167214/hls.m3u8"
+					},
+					{
+						"name": "2",
+						"slug": "tap-2",
+						"embed": "https://embed15.streamc.xyz/embed.php?hash=ca366a06d02713d89ec9b090c76f6f5d",
+						"m3u8": "https://sing.phimmoi.net/ca366a06d02713d89ec9b090c76f6f5d/hls.m3u8"
+					}
+					...
+				]
+			}
+		]
+	}
+}
+
+https://phim.nguonc.com/api/films/the-loai/phim-hai?page=1
+{
+	"status": "success",
+	"paginate": {
+		"current_page": 1,
+		"total_page": 681,
+		"total_items": 6809,
+		"items_per_page": 10
+	},
+	"cat": {
+		"name": "Hài",
+		"title": "Phim Hài",
+		"slug": "phim-hai"
+	},
+	"items": [
+		{
+			"name": "Cam Kết Thỏa Mãn Tột Cùng",
+			"slug": "cam-ket-thoa-man-tot-cung",
+			"original_name": "Maximum Pleasure Guaranteed",
+			"thumb_url": "https://phim.nguonc.com/public/images/Post/3/cam-ket-thoa-man-tot-cung.jpg",
+			"poster_url": "https://phim.nguonc.com/public/images/Post/3/cam-ket-thoa-man-tot-cung-1.jpg",
+			"created": "2026-05-20T12:11:20.000000Z",
+			"modified": "2026-06-17T06:31:56.000000Z",
+			"description": "Một bà mẹ vừa ly hôn bất ngờ rơi vào vòng xoáy nguy hiểm của tống tiền, án mạng và... bóng đá thiếu nhi.",
+			"total_episodes": 10,
+			"current_episode": "Tập 6",
+			"time": "40 phút/tập",
+			"quality": "HD",
+			"language": "Vietsub",
+			"director": "Alethea Jones",
+			"casts": "Tatiana Maslany, Jake Johnson, Jessy Hodges"
+		}
+		...
+	]
+}
+
+https://phim.nguonc.com/api/films/quoc-gia/nhat-ban
+{
+	"status": "success",
+	"paginate": {
+		"current_page": 1,
+		"total_page": 624,
+		"total_items": 6234,
+		"items_per_page": 10
+	},
+	"cat": {
+		"name": "Japan",
+		"title": "Nhật Bản",
+		"slug": "nhat-ban"
+	},
+	"items": [
+		{
+			"name": "Tái sinh: Người hùng cuối cùng",
+			"slug": "tai-sinh-nguoi-hung-cuoi-cung",
+			"original_name": "Reborn: Saigo no Hero",
+			"thumb_url": "https://phim.nguonc.com/public/images/Post/6/tai-sinh-nguoi-hung-cuoi-cung.jpg",
+			"poster_url": "https://phim.nguonc.com/public/images/Post/6/tai-sinh-nguoi-hung-cuoi-cung-1.jpg",
+			"created": "2026-05-01T04:42:34.000000Z",
+			"modified": "2026-06-16T17:58:05.000000Z",
+			"description": "Kể về Neo Kosei, một CEO công ty IT cực kỳ thành công nhưng cũng lạnh lùng và tàn nhẫn. Anh sẵn sàng lợi dụng và loại bỏ người khác để đạt mục tiêu trở thành số 1 trong ngành. Một ngày nọ, Kosei bị đẩy xuống cầu thang và chết. Tuy nhiên, anh bất ngờ tỉnh lại vào năm 2012, trong cơ thể của một người khác tên Nomoto Eito – một người hoàn toàn trái ngược với anh.",
+			"total_episodes": 9,
+			"current_episode": "Hoàn tất (9/9)",
+			"time": "45 Phút/Tập",
+			"quality": "HD",
+			"language": "Vietsub",
+			"director": "Fujita Meiji, Aso Manabu, Ninomiya Takashi",
+			"casts": "Issey Takahashi, Anne Nakamura, Ouji Suzuka"
+		}
+		...
+	]
+}
+
+https://phim.nguonc.com/api/films/nam-phat-hanh/2018?page=1
+{
+	"status": "success",
+	"paginate": {
+		"current_page": 1,
+		"total_page": 167,
+		"total_items": 1667,
+		"items_per_page": 10
+	},
+	"cat": {
+		"name": "2018",
+		"title": "2018",
+		"slug": "2018"
+	},
+	"items": [
+		{
+			"name": "Yagate Kimi ni Naru",
+			"slug": "yagate-kimi-ni-naru",
+			"original_name": "Bloom Into You",
+			"thumb_url": "https://phim.nguonc.com/public/images/Film/2667.jpg",
+			"poster_url": "https://phim.nguonc.com/public/images/Film/2667.jpg",
+			"created": "2023-07-18T02:10:34.000000Z",
+			"modified": "2026-06-15T04:56:45.000000Z",
+			"description": "Yuu Koito luôn bị mê hoặc bởi những bộ shoujo manga lãng mạn và những ca từ của những bản tình ca. Cô kiên nhẫn chờ đợi đôi cánh tình yêu đâm chồi nảy lộc và gửi gắm trái tim rung rinh vào ngày nhận được lời tỏ tình. Tuy nhiên, khi bạn học cấp hai của cô bày tỏ tình yêu của anh ấy dành cho cô trong lễ tốt nghiệp của họ, cô cảm thấy trống rỗng một cách bất ngờ. Cô ấy nhận ra rằng: cô ấy hiểu lãng mạn như một khái niệm, nhưng cô ấy không thể trực tiếp trải nghiệm cảm giác đó.",
+			"total_episodes": 13,
+			"current_episode": "Hoàn tất (13/13)",
+			"time": null,
+			"quality": "HD",
+			"language": "Vietsub",
+			"director": null,
+			"casts": null
+		}
+		...
+	]
+}
+
+https://phim.nguonc.com/api/films/search?keyword=Regeneration
+{
+	"status": "success",
+	"paginate": {
+		"current_page": 1,
+		"total_page": 1,
+		"total_items": 3,
+		"items_per_page": 10
+	},
+	"items": [
+		{
+			"id": "eyJpdiI6ImJVOEtEajVjSTFKc1lZMC9xL3F4RHc9PSIsInZhbHVlIjoiY1J4ZjJacFZnbEZGT1hGeTA5M2NFdz09IiwibWFjIjoiZmI5OTQyMDllZWZkMWYyZTFhZmY0YTZiNWUzNDg3ODEyY2Q0MWM1NmZlNjJhZGRjZGQ3YWMzZTQ3NmFjMTBlMCJ9",
+			"name": "Masamune-kun no Revenge",
+			"slug": "masamune-kun-no-revenge",
+			"original_name": "Masamune-kun's Revenge",
+			"thumb_url": "https://phim.nguonc.com/public/images/Film/1727.jpg",
+			"poster_url": "https://phim.nguonc.com/public/images/Film/1727.jpg",
+			"created": "2023-07-18T02:02:52.000000Z",
+			"modified": "2025-07-15T10:04:32.000000Z",
+			"description": "Khi Masamune Makabe còn là một đứa trẻ, anh đã bị một cô gái xinh đẹp, giàu có tên là Aki Adagaki từ chối, người đã đặt cho anh biệt danh là \"Piggy\" vì thừa cân. Chán nản, Masamune đã nỗ lực tập thể dục để cải thiện ngoại hình của mình. Bây giờ là một học sinh trung học đẹp trai nhưng tự ái, Masamune quyết tâm trả thù chính xác anh ta sẽ khiến Aki yêu mình điên cuồng và cuối cùng từ chối cô vào lần tới khi họ gặp nhau.",
+			"total_episodes": 12,
+			"current_episode": "Hoàn tất (12/12)",
+			"time": "23 phút/tập",
+			"quality": "HD",
+			"language": "Vietsub",
+			"director": null,
+			"casts": null
+		}
+		...
+	]
+}
